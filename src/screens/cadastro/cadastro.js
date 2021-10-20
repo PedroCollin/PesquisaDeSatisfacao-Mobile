@@ -23,17 +23,7 @@ function Cadastro ({navigation}) {
   return (
     <View style={styles.container}>
     <View style={styles.ellipseStack}>
-      <Svg viewBox="0 0 1175.81 744.26" style={styles.ellipse}>
-        <Ellipse
-          stroke="rgba(230, 230, 230,1)"
-          strokeWidth={0}
-          fill="rgba(208,2,27,1)"
-          cx={588}
-          cy={372}
-          rx={588}
-          ry={372}
-        ></Ellipse>
-      </Svg>
+    <View style={styles.forma}></View>;
       <TouchableOpacity 
         onPress={() => signUp()}
         style={styles.button}>
@@ -145,6 +135,13 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: 0
   },
+  forma: {
+    backgroundColor: "rgba(194,42,31,1)",
+    borderBottomRightRadius: 130,
+    borderBottomLeftRadius: 130,
+    width: '100%',
+    height: '97%'
+  },
   txtButton: {
     color: 'white',
     fontSize:20,
@@ -163,7 +160,7 @@ const styles = StyleSheet.create({
     alignSelf: "center"
   },
   ellipseStack: {
-    width: 1176,
+    width: '100%',
     height: 770,
     marginTop: -152,
     justifyContent: "center",
@@ -218,14 +215,19 @@ const styles = StyleSheet.create({
   },
   image: {
     top: 152,
-    left: 507,
+    alignSelf: "center",
+    alignItems: "center",
+    textAlign: "center",
     width: 162,
     height: 162,
     position: "absolute"
   },
   cadastro: {
     top: 299,
-    left: 460,
+    alignSelf: "center",
+    textAlign: "center",
+    alignItems: "center",
+    marginRight: 165,
     position: "absolute",
     fontFamily: "roboto-regular",
     color: "rgba(255,255,255,1)",
@@ -233,7 +235,10 @@ const styles = StyleSheet.create({
   },
   rect: {
     top: 329,
-    left: 461,
+    alignSelf: "center",
+    textAlign: "center",
+    alignItems: "center",
+    marginRight: 180,
     width: 72,
     height: 3,
     position: "absolute",
