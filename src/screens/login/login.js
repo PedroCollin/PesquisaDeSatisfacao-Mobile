@@ -77,18 +77,7 @@ function Login ({navigation}) {
             <View style={styles.linha}></View>
           </View>
       </View>
-      <View style={styles.jaTemConta}>
-        <View style={styles.jaTemUmaContaRow}>
-          <Text style={styles.jaTemUmaConta}>Não tem uma conta?</Text>
-          <View style={styles.loginStack}>
-            <Text style={styles.login}>Aqui</Text>
-            <TouchableOpacity
-              style={styles.button2}
-              onPress={() => navigation.navigate("Cadastro")}
-            ></TouchableOpacity>
-          </View>
-        </View>
-      </View>
+      
     </View>
     
   );
@@ -142,14 +131,13 @@ const styles = StyleSheet.create({
     fontSize: 30
   },
   jaTemUmaConta: {
-    fontFamily: "roboto-regular",
+    width: "100%",
     color: "#121212"
   },
   login: {
-    top: 0,
-    left: 0,
+
     position: "absolute",
-    fontFamily: "roboto-regular",
+
     color: "rgba(251,92,92,1)",
     width: 35,
     height: 17
@@ -203,7 +191,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginRight: 188,
     position: "absolute",
-    fontFamily: "roboto-regular",
+
     color: "rgba(255,255,255,1)",
     fontSize: 25
   },
@@ -244,7 +232,7 @@ const styles = StyleSheet.create({
     top: 6,
     left: 0,
     position: "absolute",
-    fontFamily: "roboto-regular",
+
     color: "#fff",
     height: 31,
     width: 224
@@ -253,7 +241,7 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     position: "absolute",
-    fontFamily: "roboto-regular",
+
     color: "rgba(255,255,255,1)",
     fontSize: 9
   },

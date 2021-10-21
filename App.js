@@ -7,7 +7,7 @@ import Home from './src/screens/home/home';
 
 const mainNavigation = createSwitchNavigator({
     // Cadastro,
-    // Login,
+    Login,
     Home,
 });
 
