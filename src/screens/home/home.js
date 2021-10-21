@@ -29,15 +29,18 @@ const styles = StyleSheet.create({
             rotate: "-27.00deg"
           }
         ],
-        marginTop: 677,
-        marginLeft: -735
+        marginTop: 677,             
+        marginLeft: -735,
+        position: "absolute",
       },
       image: {
-        bottom: '-9%',
-        left: '50%',
-        width: '50%',
-        height: '50%',
-        position: "absolute"
+        bottom: '-10%',
+        right: '10%',
+        maxWidth: 432,
+        maxHeight: 538,
+        minWidth: 200,
+        minHeight: 400,
+        position: "absolute",
       },
 
   });
