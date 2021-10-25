@@ -19,7 +19,9 @@ function Home ({navigation}) {
           style={styles.image}
         ></Image>
 
-      <TouchableOpacity style={styles.group}>
+      <TouchableOpacity style={styles.group} 
+      onPress={() => navigation.navigate('Form')}>
+      
         <Text style={styles.acessarFormulario}>Acessar Formulário</Text>
       </TouchableOpacity>
 
