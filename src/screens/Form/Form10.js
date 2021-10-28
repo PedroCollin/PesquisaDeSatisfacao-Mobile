@@ -12,22 +12,22 @@ function Form ({navigation}) {
             <View style={styles.container}>
             <View style={styles.rectStack}>
             <View style={styles.rect}></View>
-                <Image
-                    source={require("../../../assets/images/senailogo.png")}
+                 <Image
+                     source={require("../../../assets/images/senailogo.png")}
                     resizeMode="contain"
                     style={styles.image}
                 ></Image>
             </View>
-            <Formulario title=" 2. Disponibilidade de equipamentos, máquinas e ferramentas para a realização do curso " />
+            <Formulario title=" 10. Atendimento da recpeção / secretaria da escola " />
 
                 <View style={styles.container1}>
                     <TouchableOpacity style={styles.buttom1} 
-                    onPress={() => navigation.navigate('Form')}>
+                    onPress={() => navigation.navigate('Form9')}>
                         <Icon name="chevron-small-left" style={styles.icon}></Icon>
                     </TouchableOpacity>
         
                     <TouchableOpacity style={styles.buttom2} 
-                    onPress={() => navigation.navigate('Form3')}>
+                    onPress={() => navigation.navigate('Form11')}>
                         <Icon name="chevron-small-right" style={styles.icon}></Icon>
                     </TouchableOpacity>
                 </View>
